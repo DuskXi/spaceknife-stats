@@ -1,0 +1,80 @@
+name: stats
+
+# Every day, for DuskXi/SpaceKnife:
+# - traffic, stars and forks (jgehrcke/github-repo-stats; GitHub keeps traffic for 14 days only);
+# - the download count of every release file;
+# - README.md and the Pages site (scripts/report.py).
+on:
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write # push the data with GITHUB_TOKEN: the traffic token stays read-only
+  pages: write
+  id-token: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: false
+
+env:
+  STATS_REPO: DuskXi/SpaceKnife
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/configure-pages@v6
+        id: pages
+
+      - uses: actions/checkout@v7
+        with:
+          path: data
+
+      # github-repo-stats reads the traffic with TRAFFIC_TOKEN: a fine-grained token for
+      # DuskXi/SpaceKnife only, with "Administration: Read-only". Two switches change how it uses the
+      # data repo: it uses the checkout above instead of cloning, and it stops after committing.
+      # That way the push below goes out with this workflow's GITHUB_TOKEN, and the traffic token
+      # never needs write access anywhere.
+      - name: Traffic, stars and forks
+        uses: jgehrcke/github-repo-stats@ff48771cbb4324c3b77490bbfc26d6a5f3831cdb
+        env:
+          GHRS_TESTING_DATA_REPO_DIR: /github/workspace/data
+          GHRS_TESTING: "1"
+        with:
+          repository: ${{ env.STATS_REPO }}
+          ghtoken: ${{ secrets.TRAFFIC_TOKEN }}
+          databranch: main
+          ghpagesprefix: ${{ steps.pages.outputs.base_url }}
+
+      - name: Downloads, README and site
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PAGES_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          # the action ran as root, and it committed in a copy of the checkout: <workspace>/<MM-DD-HHMM>-<random>
+          sudo chown -R "$(id -u):$(id -g)" "$GITHUB_WORKSPACE"
+          dir=$(find "$GITHUB_WORKSPACE" -mindepth 2 -maxdepth 2 -name .git -not -path "$GITHUB_WORKSPACE/data/.git" -printf '%h\n' | head -n 1)
+          if [ -z "$dir" ]; then echo "github-repo-stats left no commit"; exit 1; fi
+          cd "$dir"
+          python3 scripts/report.py --repo "$STATS_REPO" --site "$GITHUB_WORKSPACE/_site" --pages-url "$PAGES_URL"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md charts "$STATS_REPO/downloads"
+          git commit -m "stats: $(date -u +%F)" || echo "no change in the report"
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v5
+        id: deployment
