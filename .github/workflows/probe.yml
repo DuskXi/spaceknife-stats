@@ -1,0 +1,20 @@
+name: probe-token
+
+# Temporary: which permissions the GitHub API wants from TRAFFIC_TOKEN (prints response headers only).
+on: workflow_dispatch
+
+permissions: {}
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          T: ${{ secrets.TRAFFIC_TOKEN }}
+        run: |
+          for path in stargazers stargazers/history traffic/views forks; do
+            echo "== $path"
+            curl -s -o /dev/null -D - -H "Authorization: Bearer $T" -H "Accept: application/vnd.github.star+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" "https://api.github.com/repos/DuskXi/SpaceKnife/$path" \
+              | grep -i -E "^HTTP|x-accepted-github-permissions|github-authentication-token-expiration" || true
+          done
