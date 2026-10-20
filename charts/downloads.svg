@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="760" height="220" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11">
+<text x="44" y="16" font-size="13" font-weight="600" fill="#8b949e">Downloads per day (last 90 days)</text>
+<rect x="667" y="8" width="10" height="10" rx="2" fill="#8b9cff"/>
+<text x="681" y="17" fill="#8b949e">Downloads</text>
+<line x1="44" x2="748" y1="192.0" y2="192.0" stroke="#8b949e" stroke-opacity="0.45"/>
+<text x="38" y="196.0" text-anchor="end" fill="#8b949e">0</text>
+<line x1="44" x2="748" y1="152.5" y2="152.5" stroke="#8b949e" stroke-opacity="0.18"/>
+<text x="38" y="156.5" text-anchor="end" fill="#8b949e">1</text>
+<line x1="44" x2="748" y1="113.0" y2="113.0" stroke="#8b949e" stroke-opacity="0.18"/>
+<text x="38" y="117.0" text-anchor="end" fill="#8b949e">2</text>
+<line x1="44" x2="748" y1="73.5" y2="73.5" stroke="#8b949e" stroke-opacity="0.18"/>
+<text x="38" y="77.5" text-anchor="end" fill="#8b949e">3</text>
+<line x1="44" x2="748" y1="34.0" y2="34.0" stroke="#8b949e" stroke-opacity="0.18"/>
+<text x="38" y="38.0" text-anchor="end" fill="#8b949e">4</text>
+<text x="47.9" y="212" text-anchor="start" fill="#8b949e">07-23</text>
+<text x="399.9" y="212" text-anchor="middle" fill="#8b949e">09-06</text>
+<text x="744.1" y="212" text-anchor="end" fill="#8b949e">10-20</text>
+<text x="396.0" y="113.0" text-anchor="middle" fill="#8b949e">no data yet</text>
+</svg>

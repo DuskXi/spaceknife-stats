@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="760" height="220" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11">
+<text x="44" y="16" font-size="13" font-weight="600" fill="#8b949e">Stars and forks (last 90 days)</text>
+<rect x="695" y="8" width="10" height="10" rx="2" fill="#f2a65a"/>
+<text x="709" y="17" fill="#8b949e">Forks</text>
+<rect x="642" y="8" width="10" height="10" rx="2" fill="#8b9cff"/>
+<text x="656" y="17" fill="#8b949e">Stars</text>
+<line x1="44" x2="748" y1="192.0" y2="192.0" stroke="#8b949e" stroke-opacity="0.45"/>
+<text x="38" y="196.0" text-anchor="end" fill="#8b949e">0</text>
+<line x1="44" x2="748" y1="152.5" y2="152.5" stroke="#8b949e" stroke-opacity="0.18"/>
+<text x="38" y="156.5" text-anchor="end" fill="#8b949e">5</text>
+<line x1="44" x2="748" y1="113.0" y2="113.0" stroke="#8b949e" stroke-opacity="0.18"/>
+<text x="38" y="117.0" text-anchor="end" fill="#8b949e">10</text>
+<line x1="44" x2="748" y1="73.5" y2="73.5" stroke="#8b949e" stroke-opacity="0.18"/>
+<text x="38" y="77.5" text-anchor="end" fill="#8b949e">15</text>
+<line x1="44" x2="748" y1="34.0" y2="34.0" stroke="#8b949e" stroke-opacity="0.18"/>
+<text x="38" y="38.0" text-anchor="end" fill="#8b949e">20</text>
+<text x="44.0" y="212" text-anchor="start" fill="#8b949e">07-23</text>
+<text x="400.0" y="212" text-anchor="middle" fill="#8b949e">09-06</text>
+<text x="748.0" y="212" text-anchor="end" fill="#8b949e">10-20</text>
+<polyline points="740.1,136.7 748.0,57.7" fill="none" stroke="#8b9cff" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="740.1,168.3 748.0,168.3" fill="none" stroke="#f2a65a" stroke-width="2" stroke-linejoin="round"/>
+</svg>
