@@ -1,12 +1,12 @@
 # SpaceKnife stats
 
-Traffic, stars, forks and downloads of [DuskXi/SpaceKnife](https://github.com/DuskXi/SpaceKnife), collected every day by [`.github/workflows/stats.yml`](.github/workflows/stats.yml) with [github-repo-stats](https://github.com/jgehrcke/github-repo-stats) and [`scripts/report.py`](scripts/report.py). Updated 2026-11-12 (UTC).
+Traffic, stars, forks and downloads of [DuskXi/SpaceKnife](https://github.com/DuskXi/SpaceKnife), collected every day by [`.github/workflows/stats.yml`](.github/workflows/stats.yml) with [github-repo-stats](https://github.com/jgehrcke/github-repo-stats) and [`scripts/report.py`](scripts/report.py). Updated 2026-11-13 (UTC).
 
 **Dashboard:** https://duskxi.github.io/spaceknife-stats/ · **Detailed traffic report:** https://duskxi.github.io/spaceknife-stats/report/report.html
 
 | Stars | Forks | Downloads | Views, 14 days | Clones, 14 days |
 |---:|---:|---:|---:|---:|
-| 54 | 7 | 861 | 457 | 845 |
+| 58 | 7 | 1,026 | 503 | 947 |
 
 ![Views per day](charts/traffic.svg)
 
@@ -18,7 +18,8 @@ Traffic, stars, forks and downloads of [DuskXi/SpaceKnife](https://github.com/Du
 
 | Day (UTC) | Views | Visitors | Clones | Cloners | Stars | Downloads |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2026-11-12 | — | — | — | — | 54 | 77 |
+| 2026-11-13 | — | — | — | — | 58 | 165 |
+| 2026-11-12 | 58 | 21 | 108 | 11 | 57 | 77 |
 | 2026-11-11 | 138 | 34 | 182 | 36 | 50 | 275 |
 | 2026-11-10 | 56 | 5 | 327 | 19 | 44 | 62 |
 | 2026-11-09 | 22 | 7 | 48 | 8 | 41 | 9 |
@@ -47,68 +48,67 @@ Traffic, stars, forks and downloads of [DuskXi/SpaceKnife](https://github.com/Du
 | 2026-10-17 | 0 | 0 | 0 | 0 | — | — |
 | 2026-10-16 | 0 | 0 | 0 | 0 | — | — |
 | 2026-10-15 | 0 | 0 | 0 | 0 | — | — |
-| 2026-10-14 | 0 | 0 | 0 | 0 | — | — |
 
 ## Downloads by release
 
 | Release | Downloads | Last 7 days |
 | --- | ---: | ---: |
-| v0.3.5 (pre-release) | 165 | 165 |
-| v0.3.4 (pre-release) | 483 | 317 |
-| v0.3.3 (pre-release) | 114 | 12 |
+| v0.3.5 (pre-release) | 199 | 199 |
+| v0.3.4 (pre-release) | 613 | 425 |
+| v0.3.3 (pre-release) | 114 | 11 |
 | v0.3.2 (pre-release) | 27 | 9 |
-| v0.3.1 (pre-release) | 53 | 12 |
+| v0.3.1 (pre-release) | 54 | 13 |
 | v0.3.0 (pre-release) | 19 | 4 |
 
 ## Downloads by file
 
 | Release | File | Downloads | Last 7 days |
 | --- | --- | ---: | ---: |
-| v0.3.5 | `SpaceKnife-0.3.5-Setup-x64.exe` | 54 | 54 |
-| v0.3.5 | `SpaceKnife-0.3.5-win-x64-portable.zip` | 46 | 46 |
-| v0.3.5 | `SpaceKnife-0.3.5-mac-arm64.dmg` | 14 | 14 |
+| v0.3.5 | `SpaceKnife-0.3.5-Setup-x64.exe` | 69 | 69 |
+| v0.3.5 | `SpaceKnife-0.3.5-win-x64-portable.zip` | 58 | 58 |
+| v0.3.5 | `SpaceKnife-0.3.5-mac-arm64.dmg` | 17 | 17 |
 | v0.3.5 | `SpaceKnife-0.3.5-linux-x64-portable.tar.gz` | 10 | 10 |
+| v0.3.5 | `SpaceKnife-0.3.5-x86_64.AppImage` | 10 | 10 |
 | v0.3.5 | `SpaceKnife-0.3.5-linux-arm64-portable.tar.gz` | 8 | 8 |
 | v0.3.5 | `SpaceKnife-0.3.5-linux-x64-tauri.tar.gz` | 7 | 7 |
-| v0.3.5 | `SpaceKnife-0.3.5-x86_64.AppImage` | 7 | 7 |
 | v0.3.5 | `spaceknife_0.3.5_amd64.deb` | 5 | 5 |
-| v0.3.5 | `SpaceKnife-0.3.5-mac-arm64-portable.zip` | 3 | 3 |
+| v0.3.5 | `SpaceKnife-0.3.5-mac-arm64-portable.zip` | 4 | 4 |
 | v0.3.5 | `SpaceKnife-0.3.5-win-arm64-portable.zip` | 3 | 3 |
 | v0.3.5 | `SpaceKnife-0.3.5-linux-arm64-tauri.tar.gz` | 2 | 2 |
 | v0.3.5 | `SpaceKnife-0.3.5-mac-x64-portable.zip` | 2 | 2 |
 | v0.3.5 | `SpaceKnife-0.3.5-mac-x64.dmg` | 2 | 2 |
 | v0.3.5 | `spaceknife-0.3.5.x86_64.rpm` | 2 | 2 |
-| v0.3.5 | `SHA256SUMS.txt` ¹ | 17 | 17 |
+| v0.3.5 | `SHA256SUMS.txt` ¹ | 21 | 21 |
+| v0.3.5 | `SHA256SUMS-portable-win-x64.txt` ¹ | 10 | 10 |
 | v0.3.5 | `SHA256SUMS-portable-linux-x64.txt` ¹ | 8 | 8 |
-| v0.3.5 | `SHA256SUMS-portable-win-x64.txt` ¹ | 8 | 8 |
-| v0.3.5 | `SHA256SUMS-mac-arm64.txt` ¹ | 4 | 4 |
+| v0.3.5 | `SHA256SUMS-mac-arm64.txt` ¹ | 5 | 5 |
 | v0.3.5 | `SHA256SUMS-portable-linux-arm64.txt` ¹ | 4 | 4 |
 | v0.3.5 | `SHA256SUMS-mac-x64.txt` ¹ | 3 | 3 |
 | v0.3.5 | `SHA256SUMS-portable-win-arm64.txt` ¹ | 3 | 3 |
 | v0.3.5 | `SHA256SUMS-tauri-linux-x64.txt` ¹ | 3 | 3 |
+| v0.3.5 | `SpaceKnife-0.3.5-x86_64.AppImage.zsync` ¹ | 3 | 3 |
 | v0.3.5 | `SHA256SUMS-tauri-linux-arm64.txt` ¹ | 2 | 2 |
-| v0.3.5 | `SpaceKnife-0.3.5-x86_64.AppImage.zsync` ¹ | 1 | 1 |
-| v0.3.4 | `SpaceKnife-0.3.4-Setup-x64.exe` | 152 | 79 |
-| v0.3.4 | `SpaceKnife-0.3.4-win-x64-portable.zip` | 94 | 50 |
-| v0.3.4 | `SpaceKnife-0.3.4-linux-x64-portable.tar.gz` | 36 | 30 |
-| v0.3.4 | `SpaceKnife-0.3.4-linux-arm64-portable.tar.gz` | 32 | 29 |
-| v0.3.4 | `SpaceKnife-0.3.4-mac-arm64.dmg` | 26 | 18 |
-| v0.3.4 | `SpaceKnife-0.3.4-win-arm64-portable.zip` | 26 | 22 |
-| v0.3.4 | `SpaceKnife-0.3.4-x86_64.AppImage` | 26 | 15 |
-| v0.3.4 | `SpaceKnife-0.3.4-mac-arm64-portable.zip` | 21 | 18 |
-| v0.3.4 | `SpaceKnife-0.3.4-mac-x64-portable.zip` | 21 | 18 |
-| v0.3.4 | `SpaceKnife-0.3.4-mac-x64.dmg` | 18 | 14 |
-| v0.3.4 | `spaceknife_0.3.4_amd64.deb` | 18 | 13 |
-| v0.3.4 | `spaceknife-0.3.4.x86_64.rpm` | 13 | 11 |
-| v0.3.4 | `SHA256SUMS.txt` ¹ | 83 | 52 |
-| v0.3.4 | `SHA256SUMS-portable-win-x64.txt` ¹ | 28 | 22 |
-| v0.3.4 | `SHA256SUMS-mac-arm64.txt` ¹ | 17 | 12 |
-| v0.3.4 | `SHA256SUMS-mac-x64.txt` ¹ | 15 | 11 |
-| v0.3.4 | `SHA256SUMS-portable-win-arm64.txt` ¹ | 14 | 11 |
-| v0.3.4 | `SHA256SUMS-portable-linux-arm64.txt` ¹ | 13 | 10 |
-| v0.3.4 | `SHA256SUMS-portable-linux-x64.txt` ¹ | 13 | 10 |
+| v0.3.4 | `SpaceKnife-0.3.4-Setup-x64.exe` | 162 | 76 |
+| v0.3.4 | `SpaceKnife-0.3.4-win-x64-portable.zip` | 120 | 69 |
+| v0.3.4 | `SpaceKnife-0.3.4-linux-x64-portable.tar.gz` | 61 | 55 |
+| v0.3.4 | `SpaceKnife-0.3.4-linux-arm64-portable.tar.gz` | 56 | 53 |
+| v0.3.4 | `SpaceKnife-0.3.4-win-arm64-portable.zip` | 39 | 35 |
+| v0.3.4 | `SpaceKnife-0.3.4-x86_64.AppImage` | 31 | 20 |
+| v0.3.4 | `SpaceKnife-0.3.4-mac-arm64.dmg` | 29 | 20 |
+| v0.3.4 | `SpaceKnife-0.3.4-mac-arm64-portable.zip` | 26 | 23 |
+| v0.3.4 | `SpaceKnife-0.3.4-mac-x64-portable.zip` | 26 | 23 |
+| v0.3.4 | `spaceknife_0.3.4_amd64.deb` | 23 | 18 |
+| v0.3.4 | `SpaceKnife-0.3.4-mac-x64.dmg` | 22 | 17 |
+| v0.3.4 | `spaceknife-0.3.4.x86_64.rpm` | 18 | 16 |
+| v0.3.4 | `SHA256SUMS.txt` ¹ | 104 | 72 |
+| v0.3.4 | `SHA256SUMS-portable-win-x64.txt` ¹ | 40 | 34 |
+| v0.3.4 | `SHA256SUMS-mac-arm64.txt` ¹ | 20 | 15 |
+| v0.3.4 | `SHA256SUMS-portable-win-arm64.txt` ¹ | 20 | 17 |
+| v0.3.4 | `SHA256SUMS-mac-x64.txt` ¹ | 19 | 15 |
+| v0.3.4 | `SHA256SUMS-portable-linux-arm64.txt` ¹ | 18 | 15 |
+| v0.3.4 | `SHA256SUMS-portable-linux-x64.txt` ¹ | 18 | 15 |
 | v0.3.4 | `SpaceKnife-0.3.4-x86_64.AppImage.zsync` ¹ | 7 | 3 |
-| v0.3.3 | `SpaceKnife-0.3.3-Setup-x64.exe` | 66 | 4 |
+| v0.3.3 | `SpaceKnife-0.3.3-Setup-x64.exe` | 66 | 3 |
 | v0.3.3 | `SpaceKnife-0.3.3-win-x64-portable.zip` | 20 | 2 |
 | v0.3.3 | `SpaceKnife-0.3.3-mac-arm64.dmg` | 10 | 1 |
 | v0.3.3 | `SpaceKnife-0.3.3-x86_64.AppImage` | 8 | 1 |
@@ -137,7 +137,7 @@ Traffic, stars, forks and downloads of [DuskXi/SpaceKnife](https://github.com/Du
 | v0.3.2 | `SHA256SUMS-portable-win-x64.txt` ¹ | 2 | 1 |
 | v0.3.2 | `SpaceKnife-0.3.2-x86_64.AppImage.zsync` ¹ | 1 | 1 |
 | v0.3.1 | `SpaceKnife-0.3.1-Setup-x64.exe` | 17 | 1 |
-| v0.3.1 | `SpaceKnife-0.3.1-win-x64-portable.zip` | 15 | 3 |
+| v0.3.1 | `SpaceKnife-0.3.1-win-x64-portable.zip` | 16 | 4 |
 | v0.3.1 | `SpaceKnife-0.3.1-x86_64.AppImage` | 7 | 1 |
 | v0.3.1 | `SpaceKnife-0.3.1-mac-arm64.dmg` | 5 | 2 |
 | v0.3.1 | `SpaceKnife-0.3.1-linux-x64-portable.tar.gz` | 3 | 2 |
@@ -159,11 +159,11 @@ Traffic, stars, forks and downloads of [DuskXi/SpaceKnife](https://github.com/Du
 
 | Referrer | Views | Visitors |
 | --- | ---: | ---: |
-| github.com | 41 | 25 |
-| Bing | 12 | 10 |
-| spaceknife.kaltsit.dev | 7 | 7 |
-| Google | 6 | 6 |
-| meta.appinn.net | 4 | 3 |
+| github.com | 43 | 28 |
+| Bing | 15 | 13 |
+| Google | 11 | 11 |
+| spaceknife.kaltsit.dev | 10 | 10 |
+| meta.appinn.net | 7 | 5 |
 | fondoblanco.org | 1 | 1 |
 | gitee.com | 1 | 1 |
 | oschina.net | 1 | 1 |
@@ -173,16 +173,16 @@ Traffic, stars, forks and downloads of [DuskXi/SpaceKnife](https://github.com/Du
 
 | Page | Views | Visitors |
 | --- | ---: | ---: |
-| `/DuskXi/SpaceKnife` | 196 | 57 |
-| `/DuskXi/SpaceKnife/releases` | 106 | 52 |
-| `/DuskXi/SpaceKnife/blob/main/README.zh-CN.md` | 23 | 20 |
-| `/DuskXi/SpaceKnife/issues` | 15 | 6 |
-| `/DuskXi/SpaceKnife/tree/main` | 14 | 11 |
-| `/DuskXi/SpaceKnife/pulls` | 12 | 4 |
-| `/DuskXi/SpaceKnife/releases/tag/v0.3.5` | 10 | 8 |
+| `/DuskXi/SpaceKnife` | 215 | 67 |
+| `/DuskXi/SpaceKnife/releases` | 121 | 64 |
+| `/DuskXi/SpaceKnife/blob/main/README.zh-CN.md` | 26 | 23 |
+| `/DuskXi/SpaceKnife/tree/main` | 16 | 13 |
+| `/DuskXi/SpaceKnife/issues` | 16 | 6 |
+| `/DuskXi/SpaceKnife/releases/tag/v0.3.5` | 12 | 10 |
+| `/DuskXi/SpaceKnife/pulls` | 11 | 4 |
 | `/DuskXi/SpaceKnife/tags` | 8 | 7 |
-| `/DuskXi/SpaceKnife/releases/tag/v0.3.4` | 7 | 6 |
 | `/DuskXi/SpaceKnife/pulse` | 7 | 2 |
+| `/DuskXi/SpaceKnife/releases/tag/v0.3.4` | 6 | 5 |
 
 ## Notes
 
